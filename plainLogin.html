@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Form</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <style type="text/css">
+	  body {
+	  	background-color: blue;
+	  }
+	  	.form-control {
+	  		background-color: white;
+	  		opacity: 1;
+	  		padding-top: 15px
+	  		margin-bottom: 20px;
+           height: 50px;
+           border-top:  white;
+           border-left: white;
+           border-right: white;
+           border-bottom: 5px solid white;
+  	  	}
+	  	h3{
+	  		text-align: center;
+	  	}
+	  	.continer {
+	  		 padding-top: 10vh
+	  	}
+	  	.loginForm{
+	  		border: 1px solid white;
+	  		padding: 34px;
+	  		padding-top: 20px;
+	  		margin-top: 45px;
+	  		background-color: white;
+
+	  	}
+	  	.title{
+	  		margin-bottom: 50px;
+	  		color: blue;
+	  	}
+       .form-group i{
+           position: absolute;
+           right: 40px;
+           top: 120px;
+           color: blue;
+           padding: 8px;
+        }
+        #eye {
+        	top :187px;
+        	padding: 8px;
+        }
+       
+
+
+	  </style>
+</head>
+<body ng-app="">
+	<div class="continer" class="loginForm">
+		<div class="col-md-4 col-md-offset-4 loginForm">
+			<h3 class="title"> <b> Log In</b></h3>
+			<form action="/login" class="form-container">
+				  <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Email Address" ng-model="user.email" required>
+        <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+
+    </div>
+    <div class="form-group">
+	        <input type="password" name="password" class="form-control" placeholder="Password" ng-model="user.password" required minlength="8">
+           <i class="fa fa-eye fa-lg" id="eye" aria-hidden="true"></i>
+
+
+    </div>
+				<div class="form-group">
+					<a href="./forgetPassword.html">Forget Password?</a>
+					<div class="col-md-8 form-group">
+               		<a href="./newAccount.html">Register</a>
+					</div>					
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-block" data-target="../mainPage/flight_search.html">Login</button>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+
+</body>
+</html>

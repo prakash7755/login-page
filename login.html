@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Form</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+	  <style type="text/css">
+	  body {
+	  	background-image: url(../images/airpalne10.jpg);
+	  }
+	  	.form-control {
+	  		background-color: transparent;
+	  		color: white;
+	  	}
+	  	.lab, .title{
+	  		color: white;
+	  	}
+	  	a{
+	  		color: pink;
+	  	}
+	  	h3{
+	  		text-align: center;
+	  	}
+	  	.continer {
+	  		 padding-top: 10vh
+	  	}
+
+	  </style>
+</head>
+<body ng-app="">
+	<div class="continer">
+		<div class="col-md-4 col-md-offset-4">
+			<h3 class="title"> <b> Log in To Fly </b></h3>
+			<form action="/login" class="form-container">
+				<div class="form-group">
+					<label for="mailId" class="lab">Email Address :</label>
+					<input type="email" name="mailId" class="form-control" placeholder="Enter MailId" required="">
+				</div>
+				<div class="form-group">
+					<label for="pwd" class="lab">Password :</label>
+					<input type="password" name="pwd" class="form-control" placeholder="Enter Password" ng-model="pwd" required="">
+					<p>{{pwd}}</p>
+				</div>
+				<div class="form-group">
+					<a href="./forgetPassword.html">Forget Password?</a>
+					<div class="col-md-8 form-group">
+					<!-- <label for="pwd"><input type="checkbox" name="Remember">Remember Me</label>	 -->
+               		<a href="./newAccount.html">Register</a>
+					</div>					
+				</div>
+				<div class="form-group">
+					<!-- <button type="reset" class="btn btn-danger">Reset</button> -->
+					<button type="submit" class="btn btn-success btn-block" data-target="../mainPage/flight_search.html">Login</button>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+
+</body>
+</html>
